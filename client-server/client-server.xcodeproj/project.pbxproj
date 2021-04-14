@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		122705E2261E298B000EE18E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705E1261E298B000EE18E /* NotificationViewController.swift */; };
 		122705E7261E2D7A000EE18E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705E6261E2D7A000EE18E /* MainViewController.swift */; };
 		122705EB261E2D98000EE18E /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705EA261E2D98000EE18E /* FruitsViewController.swift */; };
+		12F84C5E262321B100AFAC5D /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F84C5D262321B100AFAC5D /* NetworkViewController.swift */; };
+		12F84C662623296B00AFAC5D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F84C652623296B00AFAC5D /* WeatherService.swift */; };
+		1EF288009B3B1E97B41F3CBA /* Pods_client_server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D9060DE2C159987007EFC9 /* Pods_client_server.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		122705E1261E298B000EE18E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		122705E6261E2D7A000EE18E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		122705EA261E2D98000EE18E /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		12F84C5D262321B100AFAC5D /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		12F84C652623296B00AFAC5D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		55BB3E61D46EDB2BC44A3457 /* Pods-client-server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server.release.xcconfig"; path = "Target Support Files/Pods-client-server/Pods-client-server.release.xcconfig"; sourceTree = "<group>"; };
+		C997FB6FE1C3771EC3005738 /* Pods-client-server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server.debug.xcconfig"; path = "Target Support Files/Pods-client-server/Pods-client-server.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D9060DE2C159987007EFC9 /* Pods_client_server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF288009B3B1E97B41F3CBA /* Pods_client_server.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,8 @@
 			children = (
 				122705BE261E21A9000EE18E /* client-server */,
 				122705BD261E21A9000EE18E /* Products */,
+				C026526BBE4E2A5A61BE0D84 /* Pods */,
+				B661EE0EA3260384E8CA4D9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,10 +79,8 @@
 			children = (
 				122705BF261E21A9000EE18E /* AppDelegate.swift */,
 				122705C1261E21A9000EE18E /* SceneDelegate.swift */,
-				122705E5261E2D5C000EE18E /* Delegation */,
-				122705E0261E2972000EE18E /* Observer-2 */,
-				122705DE261E25E2000EE18E /* Observer-1 */,
-				122705D6261E2202000EE18E /* Singleton */,
+				12F84C5C2623219E00AFAC5D /* Lesson-2 */,
+				12F84C5A2623219500AFAC5D /* Lesson-1 */,
 				122705D4261E21B7000EE18E /* Resources */,
 			);
 			path = "client-server";
@@ -122,6 +131,43 @@
 			path = Delegation;
 			sourceTree = "<group>";
 		};
+		12F84C5A2623219500AFAC5D /* Lesson-1 */ = {
+			isa = PBXGroup;
+			children = (
+				122705E5261E2D5C000EE18E /* Delegation */,
+				122705E0261E2972000EE18E /* Observer-2 */,
+				122705DE261E25E2000EE18E /* Observer-1 */,
+				122705D6261E2202000EE18E /* Singleton */,
+			);
+			path = "Lesson-1";
+			sourceTree = "<group>";
+		};
+		12F84C5C2623219E00AFAC5D /* Lesson-2 */ = {
+			isa = PBXGroup;
+			children = (
+				12F84C5D262321B100AFAC5D /* NetworkViewController.swift */,
+				12F84C652623296B00AFAC5D /* WeatherService.swift */,
+			);
+			path = "Lesson-2";
+			sourceTree = "<group>";
+		};
+		B661EE0EA3260384E8CA4D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9060DE2C159987007EFC9 /* Pods_client_server.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C026526BBE4E2A5A61BE0D84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C997FB6FE1C3771EC3005738 /* Pods-client-server.debug.xcconfig */,
+				55BB3E61D46EDB2BC44A3457 /* Pods-client-server.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122705D0261E21AA000EE18E /* Build configuration list for PBXNativeTarget "client-server" */;
 			buildPhases = (
+				5373FD99EEF5DE2E59FBC091 /* [CP] Check Pods Manifest.lock */,
 				122705B8261E21A9000EE18E /* Sources */,
 				122705B9261E21A9000EE18E /* Frameworks */,
 				122705BA261E21A9000EE18E /* Resources */,
+				88F46D7FBC401495A974D3F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,11 +235,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5373FD99EEF5DE2E59FBC091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-client-server-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F46D7FBC401495A974D3F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-client-server/Pods-client-server-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-client-server/Pods-client-server-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-client-server/Pods-client-server-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		122705B8261E21A9000EE18E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F84C662623296B00AFAC5D /* WeatherService.swift in Sources */,
 				122705E7261E2D7A000EE18E /* MainViewController.swift in Sources */,
 				122705EB261E2D98000EE18E /* FruitsViewController.swift in Sources */,
 				122705C4261E21A9000EE18E /* ViewController.swift in Sources */,
@@ -199,6 +290,7 @@
 				122705E2261E298B000EE18E /* NotificationViewController.swift in Sources */,
 				122705DC261E222D000EE18E /* ThirdViewController.swift in Sources */,
 				122705C2261E21A9000EE18E /* SceneDelegate.swift in Sources */,
+				12F84C5E262321B100AFAC5D /* NetworkViewController.swift in Sources */,
 				122705D8261E221A000EE18E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +435,7 @@
 		};
 		122705D1261E21AA000EE18E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C997FB6FE1C3771EC3005738 /* Pods-client-server.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +454,7 @@
 		};
 		122705D2261E21AA000EE18E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BB3E61D46EDB2BC44A3457 /* Pods-client-server.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
