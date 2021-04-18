@@ -18,8 +18,12 @@
 		122705E2261E298B000EE18E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705E1261E298B000EE18E /* NotificationViewController.swift */; };
 		122705E7261E2D7A000EE18E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705E6261E2D7A000EE18E /* MainViewController.swift */; };
 		122705EB261E2D98000EE18E /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122705EA261E2D98000EE18E /* FruitsViewController.swift */; };
+		12C94C9D262769A4000036B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C94C9C262769A4000036B2 /* User.swift */; };
+		12C94CA026276BD5000036B2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C94C9F26276BD5000036B2 /* UserModel.swift */; };
+		12C94CA326276E46000036B2 /* UserElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C94CA226276E46000036B2 /* UserElement.swift */; };
 		12F84C5E262321B100AFAC5D /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F84C5D262321B100AFAC5D /* NetworkViewController.swift */; };
 		12F84C662623296B00AFAC5D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F84C652623296B00AFAC5D /* WeatherService.swift */; };
+		12F84C7C2627627D00AFAC5D /* MappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F84C7B2627627D00AFAC5D /* MappingViewController.swift */; };
 		1EF288009B3B1E97B41F3CBA /* Pods_client_server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D9060DE2C159987007EFC9 /* Pods_client_server.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +41,12 @@
 		122705E1261E298B000EE18E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		122705E6261E2D7A000EE18E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		122705EA261E2D98000EE18E /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		12C94C9C262769A4000036B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		12C94C9F26276BD5000036B2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		12C94CA226276E46000036B2 /* UserElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserElement.swift; sourceTree = "<group>"; };
 		12F84C5D262321B100AFAC5D /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		12F84C652623296B00AFAC5D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		12F84C7B2627627D00AFAC5D /* MappingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingViewController.swift; sourceTree = "<group>"; };
 		55BB3E61D46EDB2BC44A3457 /* Pods-client-server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server.release.xcconfig"; path = "Target Support Files/Pods-client-server/Pods-client-server.release.xcconfig"; sourceTree = "<group>"; };
 		C997FB6FE1C3771EC3005738 /* Pods-client-server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server.debug.xcconfig"; path = "Target Support Files/Pods-client-server/Pods-client-server.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D9060DE2C159987007EFC9 /* Pods_client_server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +87,7 @@
 			children = (
 				122705BF261E21A9000EE18E /* AppDelegate.swift */,
 				122705C1261E21A9000EE18E /* SceneDelegate.swift */,
+				12F84C7A2627625C00AFAC5D /* Lesson-3 */,
 				12F84C5C2623219E00AFAC5D /* Lesson-2 */,
 				12F84C5A2623219500AFAC5D /* Lesson-1 */,
 				122705D4261E21B7000EE18E /* Resources */,
@@ -131,6 +140,16 @@
 			path = Delegation;
 			sourceTree = "<group>";
 		};
+		12C94C9B26276996000036B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12C94C9C262769A4000036B2 /* User.swift */,
+				12C94C9F26276BD5000036B2 /* UserModel.swift */,
+				12C94CA226276E46000036B2 /* UserElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		12F84C5A2623219500AFAC5D /* Lesson-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +168,15 @@
 				12F84C652623296B00AFAC5D /* WeatherService.swift */,
 			);
 			path = "Lesson-2";
+			sourceTree = "<group>";
+		};
+		12F84C7A2627625C00AFAC5D /* Lesson-3 */ = {
+			isa = PBXGroup;
+			children = (
+				12C94C9B26276996000036B2 /* Models */,
+				12F84C7B2627627D00AFAC5D /* MappingViewController.swift */,
+			);
+			path = "Lesson-3";
 			sourceTree = "<group>";
 		};
 		B661EE0EA3260384E8CA4D9D /* Frameworks */ = {
@@ -285,10 +313,14 @@
 				12F84C662623296B00AFAC5D /* WeatherService.swift in Sources */,
 				122705E7261E2D7A000EE18E /* MainViewController.swift in Sources */,
 				122705EB261E2D98000EE18E /* FruitsViewController.swift in Sources */,
+				12F84C7C2627627D00AFAC5D /* MappingViewController.swift in Sources */,
 				122705C4261E21A9000EE18E /* ViewController.swift in Sources */,
+				12C94CA026276BD5000036B2 /* UserModel.swift in Sources */,
 				122705C0261E21A9000EE18E /* AppDelegate.swift in Sources */,
 				122705E2261E298B000EE18E /* NotificationViewController.swift in Sources */,
 				122705DC261E222D000EE18E /* ThirdViewController.swift in Sources */,
+				12C94CA326276E46000036B2 /* UserElement.swift in Sources */,
+				12C94C9D262769A4000036B2 /* User.swift in Sources */,
 				122705C2261E21A9000EE18E /* SceneDelegate.swift in Sources */,
 				12F84C5E262321B100AFAC5D /* NetworkViewController.swift in Sources */,
 				122705D8261E221A000EE18E /* FirstViewController.swift in Sources */,

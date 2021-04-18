@@ -41,4 +41,3 @@ struct CompanyModel: Codable {
   let catchPhrase: String
   let bs: String
 }
-    
